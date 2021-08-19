@@ -5,10 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="normalize.css">
-    <script src="prefixfree.min.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="css/prefixfree.min.js"></script>
 </head>
 <body>
-    
+    <style>
+
+        p {
+            color: red;
+        }
+
+    </style>
+    <p id="testes">David</p>
+    <p id="testes">David</p>
+
+    <button onclick="sair()"></button>
+
+    <script>
+
+        let sair = () => alert('ta liberado');
+
+    </script>
 </body>
 </html>
