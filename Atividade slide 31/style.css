@@ -1,0 +1,50 @@
+
+#nome {
+    border: 1px dashed red;
+    background-color: yellow;
+    width: 450px;
+}
+
+#email {
+    margin-top: 5px;
+    border: 1px dashed red;
+    background-color: yellow;
+}
+
+.main {
+    width: 520px;
+    border: 1px solid black;
+}
+
+.divcliente {
+    border: 1px solid black;
+    border-bottom: none;
+    width: 520px;
+    display: inline-flex;
+    background-color: #ebeaec;
+}
+
+.div_dados_cliente{
+    background-color: #878596;
+}
+
+.dados_cliente {
+    vertical-align: center;
+    color: white;
+}
+
+.div_imagem {
+    float: right;
+    display: inline-flex;
+}
+
+h1 {
+    color: blue;
+    font-size: 12px !important;
+    margin: 0px 0px 0px 0px !important;
+}
+
+button {
+    margin: 0px 220px !important;
+    color: blue;
+}
