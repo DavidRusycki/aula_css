@@ -79,3 +79,13 @@ h1 a:hover {
     font-size: 12px;
     text-align: center;
 }
+
+.rua {
+    background-image: url(../images/ruaxv.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: 400px;
+    width: 600px;
+    vertical-align: middle;
+}
