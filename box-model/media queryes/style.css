@@ -1,0 +1,26 @@
+
+@media (min-width: 100px) {
+    .teste {
+        background-color: rgb(95, 173, 95) !important;
+    }
+}
+@media (min-width: 250px) {
+    .teste {
+        background-color: rgb(128, 0, 107) !important;
+    } 
+}
+@media (min-width: 300px) {
+    .teste {
+        background-color: rgb(0, 70, 128) !important;
+    }
+}
+@media (min-width: 1200px) {
+    .teste {
+        background-color: rgb(98, 0, 128) !important;
+    }
+}
+@media (min-width: 1400px) {
+    .teste {
+        background-color: rgb(128, 0, 85) !important;
+    }
+}

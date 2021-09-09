@@ -1,0 +1,37 @@
+.tip::before {
+    content: '\261E';
+    margin-right: 10px;
+}
+
+table  {
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+    padding: 0.5em;
+}
+
+th {
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+.red {
+    color: red;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.green{
+    color: green;
+}
+
+@media print {
+    * {
+        color: black !important;
+        background-color: transparent;
+    }
+}

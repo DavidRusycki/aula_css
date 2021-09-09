@@ -1,6 +1,6 @@
 .help {
-    background-color: #f1efe6;
-    border: 1px solid #d4cdae;
+    background-color: #f5dcdc;
+    border: 1px solid #f14141;
     font-size: 0.9em;
     padding: 10px;
     position: relative;
@@ -9,7 +9,7 @@
 }
 
 .help::before {
-    border-color: transparent #d3cdae transparent transparent ;
+    border-color: transparent #f14141 transparent transparent ;
     border-style: solid;
     border-width: 14px;
     content: '';
