@@ -28,7 +28,7 @@ section {
     width: 660px;
 }
 
-.lateral {
+aside {
     background-color: #FFFBE4;
     border: 1px solid #C9BC8F;
     float: right;
@@ -36,16 +36,16 @@ section {
     width: 260px;
 }
 
-.lateral h3 {
+aside h3 {
     font-size: 14px;
     margin-top: 0;
 }
 
-.lateral ol {
+aside ol {
     font-size: 12px;
 }
 
-.artigo {
+article {
     background-color: #FFF;
     border-color: #CCC #999 #999 #CCC;
     border: 1px solid #CCC;
@@ -54,17 +54,17 @@ section {
     padding: 10px;
 }
 
-.artigo h2 {
+article h2 {
     border-bottom: 1px dashed #7E9F19;
     margin: 0;
 }
 
-.artigo a {
+article a {
     color: #2C88A7;
     font-weight: bold;
 }
 
-.artigo img {
+article img {
     border: 1px solid #7E9F19;
     float: left;
     margin: 10px 10px 0 0;
@@ -75,17 +75,8 @@ section {
     clear: both;
 }
 
-.rodape {
+footer {
     font-size: 12px;
     text-align: center;
 }
 
-.rua {
-    background-image: url(../images/ruaxv.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px;
-    height: 400px;
-    width: 600px;
-    vertical-align: middle;
-}
