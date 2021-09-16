@@ -1,0 +1,11 @@
+.teste {
+
+    width: 200px;
+    height: 100px;
+    background-color: #f1efe6;
+    border: 1px solid #d3cdae;
+    position: relative;
+
+    box-shadow: 3px 3px 10px #aaa;
+}
+
