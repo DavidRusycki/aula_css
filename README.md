@@ -6,4 +6,4 @@
 - [ ] PHP
 - [ ] JS
 
-![repo](https://user-images.githubusercontent.com/88463024/134833462-8aa4539e-1157-43be-bb86-10ad77dc9512.gif)
+![gary](https://user-images.githubusercontent.com/88463024/134833668-dfe6e1a4-4509-4eb1-9898-7a763ed94cf1.gif)
