@@ -1,4 +1,8 @@
 # aula_css
-Primeira aula de CSS com o Marcondes.
 
-Essa fera ai meu.
+## Repositório da matéria de Desenvolvimento WEB.
+
+### Objective
+
+[x] HTML/CSS
+
