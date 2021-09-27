@@ -4,5 +4,7 @@
 
 ### Objective
 
-- [x] HTML/CSS
+- [x] HTML/CSS 
+- [] PHP
+- [] JS
 
