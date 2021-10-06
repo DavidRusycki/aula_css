@@ -52,7 +52,7 @@ for ($i=($iPagina*$iLinhas)-$iLinhas; $i < $iLinhas*$iPagina; $i++) {
 
 echo '</table>';
 
-for ($i = 1; $i <= QUANTIDADE_TOTAL/$iLinhas; $i++) {
+for ($i = 1; $i <= QUANTIDADE_TOTAL/($iLinhas * $iColunas); $i++) {
     echo "<a href='?pagina={$i}&colunas={$iColunas}&linhas={$iLinhas}'>{$i} </a>"; 
 }
 
