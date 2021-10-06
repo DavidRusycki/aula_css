@@ -39,10 +39,10 @@ echo '<table>';
 
 for ($i=($iPagina*$iLinhas)-$iLinhas; $i < $iLinhas*$iPagina; $i++) { 
     echo '<tr>';
+    echo '<td>';
+    echo $i;
+    echo '</td>';
     for ($j=0; $j < $iColunas; $j++) { 
-        echo '<td>';
-        echo $i;
-        echo '</td>';
         echo '<td>';
         echo $aMatriz[$i][$j];
         echo '</td>';
