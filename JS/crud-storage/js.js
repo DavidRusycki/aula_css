@@ -419,7 +419,11 @@ function escreveLocal(){
 }
 
 function recuperaLocal() {
-    if (localStorage.pessoa != '') {
+    if (localStorage.pessoa == 'undefined') {
+        pessoas = [];
+        localStorage.pessoa = [];
+    }
+    else if (localStorage.pessoa != '') {
         pessoas = JSON.parse(localStorage.pessoa);
     }
 }
