@@ -53,9 +53,13 @@
         <script src="app/domain/negociacao/negociacao.js"></script>
 
         <script>
-            var n1 = new Negociacao(new Date(), 3   , 10);
+            let dataTeste = new Date();
 
-            console.log(n1);
+            console.log(dataTeste);
+            var n1 = new Negociacao(dataTeste, 3, 10);
+            dataTeste.setDate(30);
+            
+            console.log(n1._data);
         </script>
     </body>
 </html>
