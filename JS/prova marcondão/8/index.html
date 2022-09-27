@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        const DIVISAO = 'divisao';
+        const SOMA = 'soma';
+        const SUBTRACAO = 'subtracao';
+        const MULTIPLICACAO = 'multiplicacao';
+
+        function calcula(numero1, numero2, operacao) {
+            
+            switch (operacao) {
+                case DIVISAO:
+                    resultado = numero1/numero2;
+                    break;
+                case SOMA:
+                    resultado = numero1+numero2;
+                    break;
+                case SUBTRACAO:
+                    resultado = numero1-numero2;
+                    break;
+                case MULTIPLICACAO:
+                    resultado = numero1*numero2;
+                    break;
+            }
+
+            console.log(resultado);
+        }
+
+
+
+        
+    </script>
+
+</body>
+</html>

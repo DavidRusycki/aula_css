@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input id="david" type="number">
+
+    <button onclick="calcula()">Calcula</button>
+
+    <div id="resultado"></div>
+
+    <script>
+
+        function calcula() {
+            var numero = parseInt(document.getElementById('david').value);
+            document.getElementById('resultado').innerHTML = fatorial(numero);
+        }
+
+        function fatorial(numero) {
+            var resultado = numero;
+            if (numero != 1) {
+                resultado = resultado * fatorial(numero-1);
+            }
+            else {
+                resultado = 1;
+            }
+            return resultado;
+        }
+
+    </script>
+</body>
+</html>

@@ -6,7 +6,10 @@ var dataConverter = (() => {
     }
 
     let toUTC = function(stringData) {
-        stringData
+        (data, hora) = stringData.split(' ');
+        data = data.split('/').revert().join();
+        let dataPronta = data + ' ' + hora;
+        return new Date(dataPronta);
     }
 
     return {
