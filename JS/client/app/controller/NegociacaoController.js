@@ -9,8 +9,25 @@ class NegociacaoController {
         this._inputValor = document.querySelector("#valor");
 
         this._negociacoesView = new NegociacoesView('negociacoes');
-        this._negociacoes = new Negociacoes((model) => {this._negociacoesView.update(model)});
+        // this._negociacoes = new Negociacoes((model) => {this._negociacoesView.update(model)});
         
+        const me = this;
+
+        this._negociacoes = new Proxy(new Negociacoes(), {
+            get(target, prop, receiver) {
+                if (typeof(target[prop]) == typeof(Function) && ['adiciona', 'esvazia'].includes(prop)) {
+                    return function() {
+                        target[prop].apply(target, arguments);
+                        me._negociacoesView.update(target);
+                    }
+                }
+                else {
+                    return target[prop];
+                }
+
+            }
+        });
+
         this._mensagem = new Mensagem();
         this._mensagemView = new MensagemView('mensagemView');
         this._mensagemView.update(this._mensagem);
