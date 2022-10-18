@@ -7,24 +7,25 @@ class NegociacaoController {
         this._inputData = document.querySelector("#data");
         this._inputQuantidade = document.querySelector("#quantidade");
         this._inputValor = document.querySelector("#valor");
+        this._negociacoes = new Negociacoes();
     }
 
     adiciona(event) {
         event.preventDefault();
-        console.log('controller funcando');
+        
+        this._negociacoes.adiciona(this._criaNegociacao());
 
-        let data = DateConverter.paraData(this._inputData.value);
+        this._limparFormulatio()
+    }
 
-        let negociacao = new Negociacao(data, parseInt(this._inputQuantidade.value), parseFloat(this._inputValor.value));
+    _limparFormulatio() {
+        this._inputData.value = '2020-01-01';
+        this._inputQuantidade.value = 1
+        this._inputValor.value = 2.0
+    }
 
-        let diaMesAno = DateConverter.paraTexto(data);
-
-        console.log(data);
-        console.log(diaMesAno);
-        console.log(negociacao);
-
-        negociacao.getVolume();
-
+    _criaNegociacao() {
+        return new Negociacao(DateConverter.paraData(this._inputData.value), parseInt(this._inputQuantidade.value), parseFloat(this._inputValor.value));
     }
 
 }
