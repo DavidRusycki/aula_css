@@ -9,10 +9,10 @@ class DateConverter {
     }
 
     static paraData(data) {
-        if (!/^\d{4}-\d{2}-\d{2}$/.test(data)) {
-            throw new Error( ' Deve estar no formato aaaa-mm—dd');
+        if (!/\d{2}\/\d{2}\/\d{4}/.test(data)) {
+            throw new DataInvalidaException();
         }
-        return new Date(...data.split('-').map((valor, indice) => valor - (indice % 2)));
+        return new Date(...data.split('/').reverse().map((valor, indice) => valor - (indice % 2)));
     }
 
 }
