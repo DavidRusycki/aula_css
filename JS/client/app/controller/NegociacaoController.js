@@ -10,6 +10,7 @@ class NegociacaoController {
         
         this._negociacoes = new Bind(new Negociacoes(), new NegociacoesView('negociacoes'), 'adiciona', 'esvazia')
         this._mensagem = new Bind(new Mensagem(), new MensagemView('mensagemView'),  'texto');
+        this._negociacaoService = new NegociacaoService();
     }
 
     adiciona(event) {
@@ -46,6 +47,20 @@ class NegociacaoController {
     apaga() {
         this._negociacoes.esvazia();
         this._mensagem.texto = 'Negociações apagadas com sucesso!';
+    }
+
+    importaNegociacoes() {
+
+        this._negociacaoService.obterNegociacoesDaSemana((err, negiacoes) => {
+            if (err) {
+                this._mensagem.texto = 'Não foi possível obter as negocíações';
+            }
+
+            negiacoes.forEach(negociacao => this._negociacoes.adiciona(negociacao));
+
+
+this._mensagem.texto = 'Negocíações Obtidas com sucesso';
+        });
     }
 
 }
